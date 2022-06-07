@@ -451,7 +451,24 @@ Here you have an example code for the `User` model with the custom image, desc
 
 ```html
 class User extends Authenticatable
-{    …    public function adminlte_image()    {        return 'https://picsum.photos/300/300';    }    public function adminlte_desc()    {        return 'That\'s a nice guy';    }    public function adminlte_profile_url()    {        return 'profile/username';    }}
+{
+    …
+
+    public function adminlte_image()
+    {
+        return 'https://picsum.photos/300/300';
+    }
+
+    public function adminlte_desc()
+    {
+        return 'That\'s a nice guy';
+    }
+
+    public function adminlte_profile_url()
+    {
+        return 'profile/username';
+    }
+}
 ```
 
 ## [](https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration#urls)URLs
