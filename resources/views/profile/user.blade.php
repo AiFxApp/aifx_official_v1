@@ -235,7 +235,7 @@
                       <!-- timeline time label -->
                       <div class="time-label">
                         <span class="bg-danger">
-                          10 Feb. 2014
+                          07 June 2022
                         </span>
                       </div>
                       <!-- /.timeline-label -->
@@ -296,7 +296,7 @@
                       <!-- timeline time label -->
                       <div class="time-label">
                         <span class="bg-success">
-                          3 Jan. 2014
+                          3 June 2022
                         </span>
                       </div>
                       <!-- /.timeline-label -->
