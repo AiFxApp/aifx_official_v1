@@ -36,4 +36,10 @@ added adminlte resources to use in the build.
 
 go to http://127.0.0.1:8000 to test the build and login
 
+`https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Installation`
+
+`composer require jeroennoten/laravel-adminlte`
+
+`php artisan adminlte:install`
+
 still need to set up user / admin seeder
