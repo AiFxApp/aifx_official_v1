@@ -107,5 +107,23 @@ Status legends:
 
 `php artisan adminlte:install --only=basic_views`
 
+```shell
+php artisan adminlte:status
+Checking the resources installation ...
+ 7/7 [============================] 100%
+All resources checked succesfully!
+
++------------------+------------------------------------------+-----------+----------+
+| Package Resource | Description                              | Status    | Required |
++------------------+------------------------------------------+-----------+----------+
+| assets           | The AdminLTE required assets             | Installed | true     |
+| config           | The default package configuration file   | Installed | true     |
+| translations     | The default package translations files   | Installed | true     |
+| main_views       | The default package main views           | Installed | false    |
+| auth_views       | The default package authentication views | Installed | false    |
+| basic_views      | The default package basic views          | Installed | false    |
+| basic_routes     | The package routes                       | Installed | false    |
++------------------+------------------------------------------+-----------+----------+
+```
 
 still need to set up user / admin seeder
