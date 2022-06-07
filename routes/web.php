@@ -28,3 +28,7 @@ Route::get('/admin', function() {
 Route::get('admin/profile/user', function() {
     return view('profile.user');
 })->name('user-profile')->middleware('auth');
+
+Route::get('admin/profile/update', function() {
+    return view('profile.profile');
+})->name('profile-update')->middleware('auth');

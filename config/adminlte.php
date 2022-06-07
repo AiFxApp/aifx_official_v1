@@ -255,8 +255,8 @@ return [
         ],
         ['header' => 'account_settings'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/profile/user',
+            'text' => 'Profile Update',
+            'url'  => 'admin/profile/update',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
