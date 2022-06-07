@@ -512,3 +512,9 @@ The next configuration options provides a way to setup the urls for the login, r
 - **`profile_url`**
   
   Changes the user profile URL. When not `false`, it will displays a button in the user menu.
+
+
+# Profile Page Added
+http://127.0.0.1:8000/profile/user
+
+Still need to adjust route methods to fall under `admin/`
