@@ -106,3 +106,5 @@ still need to set up user / admin seeder
 Adminlte Dashboard view successful
 
 -------
+
+added adminlte dist package to public & updated home.blade css links
