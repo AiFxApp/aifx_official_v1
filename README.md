@@ -21,6 +21,10 @@ creates laravel v9 framework
 
 to open VS Code
 
+adjust .env and DB for migration
+
+`php artisan migrate`
+
 `composer dump`
 
 `php artisan optimize:clear`
