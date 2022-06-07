@@ -34,6 +34,8 @@ added adminlte resources to use in the build.
 
 go to http://127.0.0.1:8000 to test the build and login
 
+✔️ Completed : Still need to adjust route methods to fall under `admin/`
+
 `https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Installation`
 
 `composer require jeroennoten/laravel-adminlte`
@@ -517,4 +519,12 @@ The next configuration options provides a way to setup the urls for the login, r
 # Profile Page Added
 http://127.0.0.1:8000/profile/user
 
-Still need to adjust route methods to fall under `admin/`
+♾️ Need to add CRUD for User Profile
+
+♾️ Need to add Post, Comment, Like, Share for User Profile
+
+♾️ Need to work on Timeline display for user Profile
+
+
+
+
