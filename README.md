@@ -105,5 +105,7 @@ Status legends:
 
 `php artisan adminlte:install --only=basic_routes`
 
+`php artisan adminlte:install --only=basic_views`
+
 
 still need to set up user / admin seeder
