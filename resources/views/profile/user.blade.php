@@ -84,11 +84,13 @@
                 <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
 
                 <p class="text-muted">
-                  <span class="tag tag-danger">UI Design</span>
-                  <span class="tag tag-success">Coding</span>
-                  <span class="tag tag-info">Javascript</span>
-                  <span class="tag tag-warning">PHP</span>
-                  <span class="tag tag-primary">Node.js</span>
+                  <span class="tag tag-danger">* UI Design</span><br>
+                  <span class="tag tag-danger">* Laravel</span><br>
+                  <span class="tag tag-danger">* Wordpress</span><br>
+                  <span class="tag tag-success">* Coding</span><br>
+                  <span class="tag tag-info">* Javascript</span><br>
+                  <span class="tag tag-warning">* PHP</span><br>
+                  <span class="tag tag-primary">* Node.js</span><br>
                 </p>
 
                 <hr>
@@ -108,7 +110,7 @@
                 <ul class="nav nav-pills">
                   <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Activity</a></li>
                   <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Timeline</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Settings</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Update Profile</a></li>
                 </ul>
               </div><!-- /.card-header -->
               <div class="card-body">
@@ -326,17 +328,91 @@
                   <div class="tab-pane" id="settings">
                     <form class="form-horizontal">
                       <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label">Name</label>
-                        <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputName" placeholder="Name">
+                        {{-- Name field --}}
+                        <div class="input-group mb-3 ml-3 col-6">
+                            <input type="text" name="name" class="form-control @error('name') is-invalid @enderror"
+                                value="{{ old('name') }}" placeholder="{{ __('adminlte::adminlte.full_name') }}" autofocus>
+
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-user {{ config('adminlte.classes_auth_icon', '') }}"></span>
+                                </div>
+                            </div>
+
+                            @error('name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-                        <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        {{-- Email field --}}
+                        <div class="input-group mb-3 ml-3 col-6">
+                            <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
+                                value="{{ old('email') }}" placeholder="{{ __('adminlte::adminlte.email') }}">
+
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-envelope {{ config('adminlte.classes_auth_icon', '') }}"></span>
+                                </div>
+                            </div>
+
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                       </div>
+
+                      <div class="form-group row">
+                              {{-- Password field --}}
+                        <div class="input-group mb-3  ml-3 col-6">
+                            <input type="password" name="password" class="form-control @error('password') is-invalid @enderror"
+                                placeholder="{{ __('adminlte::adminlte.password') }}">
+
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-lock {{ config('adminlte.classes_auth_icon', '') }}"></span>
+                                </div>
+                            </div>
+
+                            @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+
+                        {{-- Confirm password field --}}
+                        <div class="input-group mb-3 ml-3 col-6">
+                            <input type="password" name="password_confirmation"
+                                class="form-control @error('password_confirmation') is-invalid @enderror"
+                                placeholder="{{ __('adminlte::adminlte.retype_password') }}">
+
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-lock {{ config('adminlte.classes_auth_icon', '') }}"></span>
+                                </div>
+                            </div>
+
+                            @error('password_confirmation')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                      </div>
+
+                              {{-- Register button --}}
+                        <button type="submit" class="col-4 mb-3 ml-3 rounded shadow-xl btn btn-block {{ config('adminlte.classes_auth_btn', 'btn-flat btn-primary') }}">
+                            <span class="fas fa-user-plus"></span>
+                            Update Login Detail
+                            <!--{{ __('adminlte::adminlte.register') }}-->
+                        </button>
+                        <hr class="mb-3">
+
                       <div class="form-group row">
                         <label for="inputName2" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-10">
