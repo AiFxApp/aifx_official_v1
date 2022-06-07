@@ -168,15 +168,16 @@ All resources checked succesfully!
 +------------------+------------------------------------------+-----------+----------+
 ```
 
-Registered Admin user (Remember before deployemnt to disable register url).
+‼️ Registered Admin user (Remember before deployment to disable register url).
 
-still need to set up user / admin seeder
+✔️ COMPLETED - still need to set up user / admin seeder
 
 Adminlte Dashboard view successful
 
 ---
 
 added adminlte dist package to public & updated home.blade css links
+⚠️!! Might need to relook at this - AdminLte has all of this included in package install !!
 
 `@extends('adminlte::page', ['iFrameEnabled' => true])`
 
@@ -464,7 +465,7 @@ class User extends Authenticatable
 
     public function adminlte_desc()
     {
-        return 'That\'s a nice guy';
+        return 'The Cyborg ♾️🤖♾️ DevOps Guy';
     }
 
     public function adminlte_profile_url()
@@ -474,7 +475,7 @@ class User extends Authenticatable
 }
 ```
 
-* ♾️ Still need to place `profile/user` under `admin/`
+* ♾️ ✔️ COMPLETED -- Still need to place `profile/user` under `admin/`
 
 * ♾️ Need to update user migration / controller / model for profile image upload
 

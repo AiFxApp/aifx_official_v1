@@ -25,6 +25,6 @@ Route::get('/admin', function() {
     return view('home');
 })->name('home')->middleware('auth');
 
-Route::get('/profile/user', function() {
+Route::get('admin/profile/user', function() {
     return view('profile.user');
 })->name('user-profile')->middleware('auth');
