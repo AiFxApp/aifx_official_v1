@@ -139,6 +139,40 @@ List the status of all the available plugins:
 php artisan adminlte:plugins
 php artisan adminlte:plugins list
 ````
+```shell
+php artisan adminlte:plugins list
+Checking the plugins installation ...
+ 31/31 [============================] 100%
+| Fullcalendar                        | fullcalendar            | Not Installed |
+| iCheck Bootstrap                    | icheckBootstrap         | Installed     |
+| InputMask                           | inputmask               | Not Installed |
+| Ion.RangeSlider                     | ionRangslider           | Not Installed |
+| jQuery Knob                         | jqueryKnob              | Not Installed |
+| jQuery Mapael                       | jqueryMapael            | Not Installed |
+| jQuery UI                           | jqueryUi                | Not Installed |
+| jQuery Validation                   | jqueryValidation        | Not Installed |
+| jQVMap                              | jqvmap                  | Not Installed |
+| jsGrid                              | jsgrid                  | Not Installed |
+| Pace Progress                       | paceProgress            | Not Installed |
+| Select 2 with Bootstrap 4 Theme     | select2                 | Not Installed |
+| Sparklines                          | sparklines              | Not Installed |
+| Summernote                          | summernote              | Not Installed |
+| Sweetalert 2 with Bootstrap 4 Theme | sweetalert2             | Not Installed |
+| Tempus Dominus for Bootstrap 4      | tempusdominusBootstrap4 | Not Installed |
+| Toastr                              | toastr                  | Not Installed |
++-------------------------------------+-------------------------+---------------+
+
+Status legends:
++---------------+----------------------------------------------------------------------------------------+
+| Status        | Description                                                                            |
++---------------+----------------------------------------------------------------------------------------+
+| Installed     | The plugin is installed and matches with the default package plugin                    |
+| Mismatch      | The installed plugin mismatch the package plugin (update available or plugin modified) |
+| Not Installed | The plugin is not installed                                                            |
++---------------+----------------------------------------------------------------------------------------+
+```
+
+
 List the status of the specified plugins:
 ```
 php artisan adminlte:plugins --plugin=datatables --plugin=select2
@@ -146,6 +180,45 @@ php artisan adminlte:plugins --plugin=datatables --plugin=select2
 Install all the available plugins:
 ```
 php artisan adminlte:plugins install
+```
+```shell
+The plugins installation is complete. Summary:
+
++-------------------------+-----------+
+| Plugin Key              | Status    |
++-------------------------+-----------+
+| bootstrap4DualListbox   | Installed |
+| bootstrapColorpicker    | Installed |
+| bootstrapSlider         | Installed |
+| bootstrapSwitch         | Installed |
+| bsCustomFileInput       | Installed |
+| chartJs                 | Installed |
+| datatables              | Installed |
+| datatablesPlugins       | Installed |
+| daterangepicker         | Installed |
+| ekkoLightbox            | Installed |
+| fastclick               | Installed |
+| filterizr               | Installed |
+| flagIconCss             | Installed |
+| flot                    | Installed |
+| fullcalendar            | Installed |
+| icheckBootstrap         | Installed |
+| inputmask               | Installed |
+| ionRangslider           | Installed |
+| jqueryKnob              | Installed |
+| jqueryMapael            | Installed |
+| jqueryUi                | Installed |
+| jqueryValidation        | Installed |
+| jqvmap                  | Installed |
+| jsgrid                  | Installed |
+| paceProgress            | Installed |
+| select2                 | Installed |
+| sparklines              | Installed |
+| summernote              | Installed |
+| sweetalert2             | Installed |
+| tempusdominusBootstrap4 | Installed |
+| toastr                  | Installed |
++-------------------------+-----------+
 ```
 Install only Pace Progress & Select2 plugins:
 ```
