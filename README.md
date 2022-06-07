@@ -25,6 +25,9 @@ to open VS Code
 
 `php artisan optimize:clear`
 
+added adminlte resources to use in the build.
+
+
 `php artisan serve`
 
 go to http://127.0.0.1:8000 to test the build and login
