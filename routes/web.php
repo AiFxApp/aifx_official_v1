@@ -19,8 +19,12 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/home', function() {
+Route::get('/admin', function() {
     return view('home');
 })->name('home')->middleware('auth');
+
+Route::get('/profile/user', function() {
+    return view('profile.user');
+})->name('user-profile')->middleware('auth');
