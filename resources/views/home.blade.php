@@ -1,4 +1,4 @@
-@extends('adminlte::page')
+@extends('adminlte::page', ['iFrameEnabled' => true])
 
 @section('title', 'Dashboard')
 
@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-    @extends('adminlte::page', ['iFrameEnabled' => true])
+
 @stop
 
 @section('css')
