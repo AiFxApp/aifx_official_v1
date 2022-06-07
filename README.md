@@ -132,3 +132,30 @@ Adminlte Dashboard view successful
 added adminlte dist package to public & updated home.blade css links
 
 `@extends('adminlte::page', ['iFrameEnabled' => true])`
+
+
+List the status of all the available plugins:
+````
+php artisan adminlte:plugins
+php artisan adminlte:plugins list
+````
+List the status of the specified plugins:
+```
+php artisan adminlte:plugins --plugin=datatables --plugin=select2
+```
+Install all the available plugins:
+```
+php artisan adminlte:plugins install
+```
+Install only Pace Progress & Select2 plugins:
+```
+php artisan adminlte:plugins install --plugin=paceProgress --plugin=select2
+```
+Remove all the available plugins:
+```
+php artisan adminlte:plugins remove
+```
+Remove only Select2 plugin:
+```
+php artisan adminlte:plugins remove --plugin=select2
+```
