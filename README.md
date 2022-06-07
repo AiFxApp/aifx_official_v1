@@ -406,7 +406,7 @@ Favicons could be used easily. There are two different ways to do this. Take in 
   <meta name="msapplication-TileImage" content="{{ asset('favicons/ms-icon-144x144.png') }}">
 ```
 
-# Need to work on editing and creating favicons
+♾️ Need to work on editing and creating favicons
 
 ..
 
