@@ -11,7 +11,8 @@
 @stop
 
 @section('css')
-    <link rel="stylesheet" href="/css/admin_custom.css">
+    <link rel="stylesheet" href="/dist-adminlte/css/admin_aifx.css">
+    <link rel="stylesheet" href="/dist-adminlte/css/adminlte.css">
 @stop
 
 @section('js')
