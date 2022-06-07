@@ -99,4 +99,10 @@ All resources checked succesfully!
 +------------------+------------------------------------------+-----------+----------+
 ```
 
+Registered Admin user (Remember before deployemnt to disable register url).
+
 still need to set up user / admin seeder
+
+Adminlte Dashboard view successful
+
+-------
