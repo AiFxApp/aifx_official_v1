@@ -232,3 +232,5 @@ Remove only Select2 plugin:
 ```
 php artisan adminlte:plugins remove --plugin=select2
 ```
+----------
+
