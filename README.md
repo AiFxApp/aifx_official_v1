@@ -108,3 +108,5 @@ Adminlte Dashboard view successful
 -------
 
 added adminlte dist package to public & updated home.blade css links
+
+`@extends('adminlte::page', ['iFrameEnabled' => true])`

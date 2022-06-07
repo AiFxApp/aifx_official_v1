@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
+    @extends('adminlte::page', ['iFrameEnabled' => true])
 @stop
 
 @section('css')
