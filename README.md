@@ -262,10 +262,11 @@ Install all the available plugins:
 php artisan adminlte:plugins install
 ```
 
+* ♾️ Remember to remove the ones not used before deployement
+
 ```shell
+
 The plugins installation is complete. Summary:
-
-
 
 +-------------------------+-----------+
 
@@ -406,7 +407,7 @@ Favicons could be used easily. There are two different ways to do this. Take in 
   <meta name="msapplication-TileImage" content="{{ asset('favicons/ms-icon-144x144.png') }}">
 ```
 
-♾️ Need to work on editing and creating favicons
+* ♾️ Need to work on editing and creating favicons
 
 ..
 
@@ -468,10 +469,17 @@ class User extends Authenticatable
 
     public function adminlte_profile_url()
     {
-        return 'profile/username';
+        return 'profile/user';
     }
 }
 ```
+
+* ♾️ Still need to place `profile/user` under `admin/`
+
+* ♾️ Need to update user migration / controller / model for profile image upload
+
+* ♾️ Need to bring in imgae upload dependency (looking at Spatie Media)
+
 
 ## [](https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration#urls)URLs
 
@@ -519,11 +527,11 @@ The next configuration options provides a way to setup the urls for the login, r
 # Profile Page Added
 http://127.0.0.1:8000/profile/user
 
-♾️ Need to add CRUD for User Profile
+* ♾️ Need to add CRUD for User Profile
 
-♾️ Need to add Post, Comment, Like, Share for User Profile
+* ♾️ Need to add Post, Comment, Like, Share for User Profile
 
-♾️ Need to work on Timeline display for user Profile
+* ♾️ Need to work on Timeline display for user Profile
 
 
 
