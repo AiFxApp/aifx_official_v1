@@ -32,3 +32,7 @@ Route::get('admin/profile/user', function() {
 Route::get('admin/profile/update', function() {
     return view('profile.profile');
 })->name('profile-update')->middleware('auth');
+
+Route::get('admin/kanban', function() {
+    return view('dashboard.kanban');
+})->name('kanban')->middleware('auth');
